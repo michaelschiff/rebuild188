@@ -15,7 +15,8 @@ function vValue (id) {
 				tempThis.x = topX;
 				tempThis.y = topY;
 				tempThis.height = 55;
-				tempThis.data = paper.text(topX, topY+30, "");
+				tempThis.data = paper.text(topX, topY+35, "");
+				tempThis.data.attr("font-size", 16);
 				tempThis.shape.node.onmouseover = function () { this.style.cursor = 'pointer'; }
 				tempThis.shape.node.onclick = function () { 	
 						for (var i = 0; i < vVals.length; i++) {
@@ -48,6 +49,7 @@ function qValue (id) {
 				tempThis.y = topY;
 				tempThis.height = 30*2;
 				tempThis.data = paper.text(topX, topY+30, "");
+				tempThis.data.attr("font-size", 16);
 				tempThis.shape.node.onmouseover = function () { this.style.cursor = 'pointer';}
 				tempThis.shape.node.onclick = function () {
 						for (var i = 0; i < qVals.length; i++) {
