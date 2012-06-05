@@ -30,6 +30,13 @@ function vValue (id) {
 								q.data.attr({"text": document.getElementById(q.id).value});
 						}
 						document.getElementById(tempThis.id).type = 'text';
+						document.getElementById(tempThis.id).focus();
+						document.getElementById(tempThis.id).onkeypress = function(e) {
+								if (e.charCode == 13) {
+										document.getElementById(tempThis.id).type = 'hidden';
+										tempThis.data.attr({"text": document.getElementById(tempThis.id).value});
+								}
+						}
 				}
 		}
 }
@@ -63,6 +70,13 @@ function qValue (id) {
 								v.data.attr({"text": document.getElementById(v.id).value});
 						}
 						document.getElementById(tempThis.id).type = 'text';
+						document.getElementById(tempThis.id).focus();
+						document.getElementById(tempThis.id).onkeypress = function(e) {
+								if (e.charCode == 13) {
+										document.getElementById(tempThis.id).type = 'hidden';
+										tempThis.data.attr({"text": document.getElementById(tempThis.id).value});
+								}
+						}
 				}
 		}
 }
