@@ -1,8 +1,6 @@
 var paper = Raphael("paper1", 3000, 3000);
-var vVals = new Array();
-for (var i = 0; i < 6; i++) { vVals.push(new vValue()); }
-var qVals = new Array();
-for (var i = 0; i < 8; i++) { qVals.push(new qValue()); }
+for (var i = 1; i <= 6; i++) { new vValue("v"+i); }
+for (var i = 1; i <= 8; i++) { new qValue("q"+i); }
 var x = 125;
 var y = 3;
 for (var i = 0; i < vVals.length; i++) {
