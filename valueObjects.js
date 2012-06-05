@@ -9,12 +9,8 @@ function vValue () {
 				tempThis.x = topX;
 				tempThis.y = topY;
 				tempThis.height = 55;
-		}
-		this.initialize = function () {
-				tempThis.shape.node.onclick = function () {
-						//document.getElementById("worker").setAttribute("type", "text");
-						window.alert("!!!!!!!!!!");
-				}
+				tempThis.shape.node.onmouseover = function () { this.style.cursor = 'pointer'; }
+				tempThis.shape.node.onclick = function () { window.alert("!!!!"); }
 		}
 }
 
@@ -29,6 +25,8 @@ function qValue () {
 				tempThis.x = topX;
 				tempThis.y = topY;
 				tempThis.height = 30*2;
+				tempThis.shape.node.onmouseover = function () { this.style.cursor = 'pointer';}
+				tempThis.shape.node.onclick = function () { window.alert("!!!!"); }
 		}
 }
 				

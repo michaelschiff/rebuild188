@@ -10,10 +10,10 @@ for (var i = 0; i < vVals.length; i++) {
     v.drawShape(paper, x, y);
     
     if (i % 2 == 0) {
-        v.shape.attr({"stroke-width": 3, "stroke": "#00f"});
+        v.shape.attr({"stroke-width": 3, "stroke": "#00f", "fill":"#fff"});
         x += 200;
     } else {
-        v.shape.attr({"stroke-width": 3, "stroke": "#f0f"});
+        v.shape.attr({"stroke-width": 3, "stroke": "#f0f", "fill":"#fff"});
         x = 125;
         y += 250;
     }
@@ -24,13 +24,13 @@ for (var i = 0; i < qVals.length; i++) {
     var	q = qVals[i];
     q.drawShape(paper, x, y);
     if (i % 4 == 0) {
-        q.shape.attr({"stroke-width":3, "stroke": "#00f"})
+        q.shape.attr({"stroke-width":3, "stroke": "#00f", "fill":"#fff"})
         x += 100;
     } else if (i % 4 == 1) {
         q.shape.attr({"stroke-width":3, "stroke":"#00f", "fill":"#00f", "fill-opacity":0.5});
         x += 100;
     } else if (i % 4 == 2) {
-        q.shape.attr({"stroke-width":3, "stroke":"#f0f"});
+        q.shape.attr({"stroke-width":3, "stroke":"#f0f", "fill":"#fff"});
         x += 100;
     } else if (i % 4 == 3) {
         q.shape.attr({"stroke-width":3, "stroke":"#f0f", "fill":"#f0f", "fill-opacity":0.5});
@@ -62,4 +62,3 @@ for (var i = 0; i < 8; i++) {
     a2.attr("stroke-width", 2);
     if (i == 3) { tempV += 2; }
 }
-vVals[0].initialize();
