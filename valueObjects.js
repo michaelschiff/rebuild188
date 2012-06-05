@@ -17,8 +17,10 @@ function vValue (id) {
 				tempThis.height = 55;
 				tempThis.data = paper.text(topX, topY+35, "");
 				tempThis.data.attr("font-size", 16);
-				tempThis.shape.node.onmouseover = function () { this.style.cursor = 'pointer'; }
-				tempThis.shape.node.onclick = function () { 	
+				var mo = function () { this.style.cursor = 'pointer'; }
+				tempThis.shape.node.onmouseover = mo;
+				tempThis.data.node.onmouseover = mo;
+				var click = function () { 	
 						for (var i = 0; i < vVals.length; i++) {
 								var v = vVals[i];
 								document.getElementById(v.id).type = 'hidden';
@@ -38,6 +40,8 @@ function vValue (id) {
 								}
 						}
 				}
+				tempThis.shape.node.onclick = click;
+				tempThis.data.node.onclick = click;
 		}
 }
 
@@ -57,8 +61,10 @@ function qValue (id) {
 				tempThis.height = 30*2;
 				tempThis.data = paper.text(topX, topY+30, "");
 				tempThis.data.attr("font-size", 16);
-				tempThis.shape.node.onmouseover = function () { this.style.cursor = 'pointer';}
-				tempThis.shape.node.onclick = function () {
+				var mo = function () { this.style.cursor = 'pointer';}
+				tempThis.shape.node.onmouseover = mo;
+				tempThis.data.node.onmouseover = mo;
+				var click = function () {
 						for (var i = 0; i < qVals.length; i++) {
 								var q = qVals[i];
 								document.getElementById(q.id).type = 'hidden';
@@ -78,6 +84,8 @@ function qValue (id) {
 								}
 						}
 				}
+				tempThis.shape.node.onclick = click;
+				tempThis.data.node.onclick = click;
 		}
 }
 				
