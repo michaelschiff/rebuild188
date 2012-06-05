@@ -22,13 +22,13 @@ for (var i = 0; i < qVals.length; i++) {
     var	q = qVals[i];
     q.drawShape(paper, x, y);
     if (i % 4 == 0) {
-        q.shape.attr({"stroke-width":3, "stroke": "#00f", "fill":"#none"})
+        q.shape.attr({"stroke-width":3, "stroke": "#00f", "fill":"#fff"})
         x += 100;
     } else if (i % 4 == 1) {
         q.shape.attr({"stroke-width":3, "stroke":"#00f", "fill":"#00f", "fill-opacity":0.5});
         x += 100;
     } else if (i % 4 == 2) {
-        q.shape.attr({"stroke-width":3, "stroke":"#f0f", "fill":"#none"});
+        q.shape.attr({"stroke-width":3, "stroke":"#f0f", "fill":"#fff"});
         x += 100;
     } else if (i % 4 == 3) {
         q.shape.attr({"stroke-width":3, "stroke":"#f0f", "fill":"#f0f", "fill-opacity":0.5});

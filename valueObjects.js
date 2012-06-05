@@ -22,19 +22,19 @@ function vValue (id) {
 						for (var i = 0; i < vVals.length; i++) {
 								var v = vVals[i];
 								document.getElementById(v.id).type = 'hidden';
-								v.data.attr({"text": document.getElementById(v.id).value});
+								v.data.attr({"text": parse(document.getElementById(v.id).value)});
 						}
 						for (var i = 0; i < qVals.length; i++) {
 								var q = qVals[i];
 								document.getElementById(q.id).type = 'hidden';
-								q.data.attr({"text": document.getElementById(q.id).value});
+								q.data.attr({"text": parse(document.getElementById(q.id).value)});
 						}
 						document.getElementById(tempThis.id).type = 'text';
 						document.getElementById(tempThis.id).focus();
 						document.getElementById(tempThis.id).onkeypress = function(e) {
 								if (e.charCode == 13) {
 										document.getElementById(tempThis.id).type = 'hidden';
-										tempThis.data.attr({"text": document.getElementById(tempThis.id).value});
+										tempThis.data.attr({"text": parse(document.getElementById(tempThis.id).value)});
 								}
 						}
 				}
@@ -62,19 +62,19 @@ function qValue (id) {
 						for (var i = 0; i < qVals.length; i++) {
 								var q = qVals[i];
 								document.getElementById(q.id).type = 'hidden';
-								q.data.attr({"text": document.getElementById(q.id).value});
+								q.data.attr({"text": parse(document.getElementById(q.id).value)});
 						}
 						for (var i = 0; i < vVals.length; i++)  {
 								var v = vVals[i];
 								document.getElementById(v.id).type = 'hidden';
-								v.data.attr({"text": document.getElementById(v.id).value});
+								v.data.attr({"text": parse(document.getElementById(v.id).value)});
 						}
 						document.getElementById(tempThis.id).type = 'text';
 						document.getElementById(tempThis.id).focus();
 						document.getElementById(tempThis.id).onkeypress = function(e) {
 								if (e.charCode == 13) {
 										document.getElementById(tempThis.id).type = 'hidden';
-										tempThis.data.attr({"text": document.getElementById(tempThis.id).value});
+										tempThis.data.attr({"text": parse(document.getElementById(tempThis.id).value)});
 								}
 						}
 				}
