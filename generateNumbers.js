@@ -1,14 +1,13 @@
 var T = new Array();
 var R = new Array();
 var Table = new Array();
-
 for (var i = 0; i < 8; i++) {
 	T.push(Math.round(Math.random()*10)/10);
 	R.push(Math.floor(-3 + (1+2+3)*Math.random()));
 }
 
-var body = document.getElementsByTagName("body");
-body = body[body.length-1];
+var body = document.getElementById("right");
+var tag = document.createElement("div");
 
 var tbl = document.createElement("table");
 var tblBody = document.createElement("tbody");
@@ -64,8 +63,10 @@ for (var i = 0; i < 10; i++) {
 		tblBody.appendChild(Table[i]);
 }
 tbl.appendChild(tblBody);
-body.appendChild(tbl);
-tbl.setAttribute("border", "4");
+tag.appendChild(tbl);
+body.appendChild(tag);
+tag.setAttribute("style", "padding-top:10px;"+"padding-left:115px;");
+tbl.setAttribute("border", "1");
 //for (var j = 0; j < 2; j++) {
 //	var row = document.createElement("tr");
 //	for (var i = 0; i < 2; i++) {
