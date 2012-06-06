@@ -42,7 +42,7 @@ function parse (string) {
 		if (operator == "*") { ans = parse(left) * parse(right); }
 		return Math.round(ans*Math.pow(10, 3))/Math.pow(10, 3);
 }
-/*
+
 document.write("5 = "+parse("5")+"<br/>");
 document.write("'' = "+parse("")+"<br/>");
 document.write("' ' = "+parse(" ")+"<br/>");
@@ -55,4 +55,4 @@ document.write("1 + 1 / 3 + (5 + 2*2) = "+parse("1 + 1 / 3 + (5 + 2*2)")+"</br>"
 document.write("3 * (4 + 2 * 8 /2 - (5 / 3 * 2)) = "+parse("3 * (4 + 2 * 8 /2 - (5 / 3 * 2))")+"</br>");
 document.write("3 + 4 / 6 * 9 / 6 + 6 = "+parse("3 + 4 / 6 * 9 / 6 + 6")+"</br>");
 document.write("(2 + 3 / 5) - (3 * ( 4 / 5* (2 + 1)) - 4) + (6 *2) = "+parse("(2 + 3 / 5) - (3 * ( 4 / 5* (2 + 1)) - 4) + (6 *2)")+"</br>");
-*/
+

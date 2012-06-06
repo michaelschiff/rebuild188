@@ -3,7 +3,7 @@ getTriangle(keypaper, 50, 3, 55, 80).attr({"stroke": "#00f", "stroke-width":3, "
 keypaper.text(50, 38, "A").attr("font-size", 18);
 getTriangle(keypaper, 150, 3, 55, 80).attr({"stroke":"#f0f", "stroke-width":3, "fill":"none"});
 keypaper.text(150, 38, "B").attr("font-size", 18);
-var keypaper2 = Raphael("keypaper2", 1000, 65);
+var keypaper2 = Raphael("keypaper2", 400, 65);
 keypaper2.circle(50,33, 30).attr({"stroke":"#00f", "stroke-width": 3,});
 keypaper2.text(50, 33, "Q(A,0)").attr("font-size", 18);
 keypaper2.circle(150, 33, 30).attr({"stroke":"#00f", "stroke-width": 3, "fill":"#00f", "fill-opacity":0.5});

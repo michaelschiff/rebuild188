@@ -1,4 +1,4 @@
-var paper = Raphael("paper1", 3000, 600);
+var paper = Raphael("paper1", 420, 600);
 for (var i = 1; i <= 6; i++) { new vValue("v"+i); }
 for (var i = 1; i <= 8; i++) { new qValue("q"+i); }
 var x = 125;

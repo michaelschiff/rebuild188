@@ -69,7 +69,7 @@ for (var i = 0; i < 10; i++) {
 }
 tbl.appendChild(tblBody);
 body.appendChild(tbl);
-tbl.setAttribute("border", "1");
+tbl.setAttribute("class", "table table-bordered");
 //for (var j = 0; j < 2; j++) {
 //	var row = document.createElement("tr");
 //	for (var i = 0; i < 2; i++) {
