@@ -2,6 +2,10 @@ var T = new Array();
 var R = new Array();
 var Table = new Array();
 for (var i = 0; i < 8; i++) {
+    //T = [.6, .4, .4, .6, .5, .5, .8, .2];
+	//R = [-1, -3, 1, -2, 1, -1, -2, -1];
+	//T = [.3, .7, .8, .2, .7, .3, .4, .6];
+	//R = [1.0, -1.0, -3.0, 1.0, 1.0, 1.0, -3.0, 2.0];
 	//T.push(0);
 	//R.push(0);
 	T.push(Math.round(Math.random()*10)/10);

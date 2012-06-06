@@ -21,11 +21,11 @@ var correct = function () {
 	}
 	for (var i = 0; i < vVals.length; i++) {
 			if (vAns[i] == parse(document.getElementById(vVals[i].id).value)) { vVals[i].correct = true; }
-			//console.log(vVals[i].id+" should match "+vAns[i]);
+			console.log(vVals[i].id+" should match "+vAns[i]);
 	}
 	for (var i = 0; i < qVals.length; i++) {
 			if (qAns[i] == parse(document.getElementById(qVals[i].id).value)) { qVals[i].correct = true; }
-			//console.log(qVals[i].id+" should match "+qAns[i]);
+			console.log(qVals[i].id+" should match "+qAns[i]);
 	}
 }
 var check = function () {
