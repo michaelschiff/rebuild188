@@ -2,6 +2,8 @@ var T = new Array();
 var R = new Array();
 var Table = new Array();
 for (var i = 0; i < 8; i++) {
+	//T.push(0);
+	//R.push(0);
 	T.push(Math.round(Math.random()*10)/10);
 	R.push(Math.floor(-3 + (1+2+3)*Math.random()));
 }

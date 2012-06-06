@@ -8,7 +8,7 @@ function parse (string) {
 			if (pt == 0 && i != 0 && i != clean.length-1) { pFlag = false; }
 		}
 		if (pFlag && clean.charAt(0) == "(" && clean.charAt(clean.length-1) == ")") { clean = clean.slice(1, clean.length-1); }
-		console.log(clean);
+		//console.log(clean);
 		if (!isNaN(Number(clean))) { return parseFloat(clean, 10); }
 		var curParenDepth = 0;
 		var minParenDepth = Number.POSITIVE_INFINITY;
