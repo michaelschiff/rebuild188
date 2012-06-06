@@ -1,4 +1,5 @@
 <html>
+		
 		<title>Value Iteration</Title>
 		<link href="bootstrap.css" rel="stylesheet">
 		<div class="navbar navbar-fixed-top">
@@ -10,10 +11,14 @@
 		</div>
 		
 		
-		<div class="container">	
+		<div class="container">
+				<div class "row">
+						<div id="explanation" class="span12" style="padding-top: 60px;">
+								<p>Below is a graph representing the value iteration computation. Fill in the \(V_i^*\)-values and the \(Q_i^*\)-values in all layers based on the MDP model shown on the right and using \(\gamma=1\) (i.e., no discounting). As a reminder, the maximizer nodes are the \(V_i^*\) nodes, with \(i\) being the number of time-steps remaining. The chance nodes are the \(Q_i^*\) nodes, with \(i\) being the number of time-steps remaining. See lecture slides on MDPs for more specifics. The box that shows up at the bottom for your entry will process basic arithmetic expressions for you!</p>
+						</div>
 				<div class="row">
-					<div id="paper1" class="span6" style="padding-top: 60px;"></div>
-					<div id="right" class="span6" style="padding-top: 60px;">
+					<div id="paper1" class="span6"></div>
+					<div id="right" class="span6" style="padding-top: 50px;">
 						<div id="keypaper" class="container" style="padding-left:100px;"></div>
 						<div id="keypaper2" class="container"></div>
 					</div>
@@ -39,7 +44,7 @@
 				</div>
 		</div>
 
-
+		<script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>	
 		<script type="text/javascript" src="calcParser.js"></script>
 		<script type="text/javascript" src="raphael.js"></script>
 		<script type="text/javascript" src="drawShapes.js"></script>
@@ -47,5 +52,6 @@
 		<script type="text/javascript" src="myDrawingFunctions.js"></script>
 		<script type="text/javascript" src="drawKey.js"></script>
 		<script type="text/javascript" src="generateNumbers.js"></script>
+
 </html>
 
