@@ -6,8 +6,7 @@ for (var i = 0; i < 8; i++) {
 	R.push(Math.floor(-3 + (1+2+3)*Math.random()));
 }
 
-var body = document.getElementById("right");
-var tag = document.createElement("div");
+var body = document.getElementById("markovmodel");
 
 var tbl = document.createElement("table");
 var tblBody = document.createElement("tbody");
@@ -63,9 +62,7 @@ for (var i = 0; i < 10; i++) {
 		tblBody.appendChild(Table[i]);
 }
 tbl.appendChild(tblBody);
-tag.appendChild(tbl);
-body.appendChild(tag);
-tag.setAttribute("style", "padding-top:10px;"+"padding-left:115px;");
+body.appendChild(tbl);
 tbl.setAttribute("border", "1");
 //for (var j = 0; j < 2; j++) {
 //	var row = document.createElement("tr");

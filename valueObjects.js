@@ -9,6 +9,7 @@ function vValue (id) {
 		this.height = null;
 		this.id = id;
 		this.data = null;
+		this.correct = false;
 		var tempThis = this;
 		this.drawShape = function (paper, topX, topY) {
 				tempThis.shape = getTriangle(paper, topX, topY, 55, 80);
@@ -53,6 +54,7 @@ function qValue (id) {
 		this.height = null;
 		this.id = id;
 		this.data = null;
+		this.correct = false;
 		var tempThis = this;
 		this.drawShape = function (paper, topX, topY) {
 				tempThis.shape = paper.circle(topX, topY+30, 30);
